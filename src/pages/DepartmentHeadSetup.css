@@ -1,0 +1,673 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.department-setup-page {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #f4f8f4 0%,
+            #eef7f1 50%,
+            #f8faf8 100%
+        );
+}
+
+
+/* =====================================================
+   BACKGROUND DECORATION
+===================================================== */
+
+.department-setup-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.background-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(5px);
+}
+
+
+.circle-one {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    left: -120px;
+    background: rgba(34, 139, 34, 0.08);
+}
+
+
+.circle-two {
+    width: 420px;
+    height: 420px;
+    right: -150px;
+    bottom: -180px;
+    background: rgba(16, 122, 83, 0.08);
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.department-setup-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.department-setup-header {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+
+.department-logo {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    color: #ffffff;
+    font-size: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #187c45,
+            #0f5d35
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(21, 104, 59, 0.25);
+}
+
+
+.department-badge {
+    display: inline-block;
+
+    margin: 0 0 8px;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    color: #16713e;
+
+    background: #e4f4e9;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+
+.department-setup-header h1 {
+    margin: 0;
+
+    color: #183328;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.department-setup-header > div:last-child > p:last-child {
+    margin: 8px 0 0;
+
+    color: #6b7b71;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.department-form-card {
+    padding: 38px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid
+        rgba(24, 92, 52, 0.08);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(22, 67, 42, 0.10);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.form-card-heading {
+    margin-bottom: 30px;
+}
+
+
+.form-card-heading h2 {
+    margin: 0;
+
+    color: #20352a;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.form-card-heading p {
+    margin: 7px 0 0;
+
+    color: #829087;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.department-form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =====================================================
+   LABELS
+===================================================== */
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #34463c;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.optional-label {
+    padding: 2px 8px;
+
+    border-radius: 10px;
+
+    color: #8a948e;
+
+    background: #f0f3f1;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT WRAPPER
+===================================================== */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.input-icon {
+    position: absolute;
+
+    left: 15px;
+
+    color: #8a9b90;
+
+    font-size: 15px;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.input-wrapper input,
+.input-wrapper select {
+    width: 100%;
+    height: 52px;
+
+    box-sizing: border-box;
+
+    padding: 0 16px 0 45px;
+
+    border: 1px solid #dce5df;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    color: #26382f;
+
+    background: #ffffff;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.input-wrapper input::placeholder {
+    color: #a5afa9;
+}
+
+
+.input-wrapper input:focus,
+.input-wrapper select:focus {
+    border-color: #22834a;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(34, 131, 74, 0.10);
+
+    background: #fcfffd;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.input-wrapper select {
+    cursor: pointer;
+
+    appearance: none;
+
+    background-image:
+        linear-gradient(
+            45deg,
+            transparent 50%,
+            #668070 50%
+        ),
+        linear-gradient(
+            135deg,
+            #668070 50%,
+            transparent 50%
+        );
+
+    background-position:
+        calc(100% - 20px) 22px,
+        calc(100% - 15px) 22px;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat:
+        no-repeat;
+}
+
+
+/* =====================================================
+   PASSWORD TOGGLE
+===================================================== */
+
+.password-toggle {
+    position: absolute;
+
+    right: 13px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    color: #718077;
+
+    background: transparent;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.password-toggle:hover {
+    color: #1a7c43;
+
+    background: #edf7f0;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.form-message {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+}
+
+
+.form-message span {
+    width: 24px;
+    height: 24px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-weight: 700;
+}
+
+
+.form-message p {
+    margin: 0;
+}
+
+
+.form-message.success {
+    color: #17683a;
+
+    background: #e8f7ed;
+
+    border: 1px solid #bfe8cc;
+}
+
+
+.form-message.success span {
+    color: #ffffff;
+
+    background: #219653;
+}
+
+
+.form-message.error {
+    color: #b33a3a;
+
+    background: #fff0f0;
+
+    border: 1px solid #f3caca;
+}
+
+
+.form-message.error span {
+    color: #ffffff;
+
+    background: #d9534f;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.create-department-btn {
+    grid-column: 1 / -1;
+
+    min-height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #21884c,
+            #126738
+        );
+
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px
+        rgba(22, 112, 59, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.create-department-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(22, 112, 59, 0.28);
+}
+
+
+.create-department-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+
+.create-department-btn:disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   LOADING SPINNER
+===================================================== */
+
+.button-spinner {
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid
+        rgba(255, 255, 255, 0.35);
+
+    border-top-color: #ffffff;
+
+    border-radius: 50%;
+
+    animation:
+        department-spin
+        0.8s linear infinite;
+}
+
+
+@keyframes department-spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 26px;
+
+    color: #87938c;
+
+    font-size: 12px;
+}
+
+
+.footer-dot {
+    color: #b3bdb6;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    .department-setup-page {
+        padding: 30px 16px;
+    }
+
+
+    .department-setup-header h1 {
+        font-size: 27px;
+    }
+
+
+    .department-form-card {
+        padding: 28px 22px;
+    }
+
+
+    .department-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .full-width,
+    .create-department-btn,
+    .form-message {
+        grid-column: auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 500px) {
+
+    .department-setup-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .department-logo {
+        width: 58px;
+        height: 58px;
+
+        border-radius: 16px;
+
+        font-size: 24px;
+    }
+
+
+    .department-setup-header h1 {
+        font-size: 23px;
+    }
+
+
+    .department-setup-header > div:last-child > p:last-child {
+        font-size: 13px;
+    }
+
+
+    .department-form-card {
+        padding: 24px 18px;
+
+        border-radius: 18px;
+    }
+
+
+    .form-footer {
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+}

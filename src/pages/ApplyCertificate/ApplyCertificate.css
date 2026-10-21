@@ -1,0 +1,57 @@
+.certificate-page{
+
+    padding:40px;
+
+}
+
+.certificate-page h1{
+
+    color:#2E7D32;
+
+}
+
+.certificate-page p{
+
+    margin-bottom:30px;
+
+}
+
+.certificate-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.certificate-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.certificate-card h2{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}

@@ -1,0 +1,148 @@
+
+.chat-window {
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+
+    background-color: #efeae2;
+
+    padding: 10px 0;
+
+    scrollbar-width: thin;
+}
+
+.chat-window::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: #b7b7b7;
+
+    border-radius: 10px;
+}
+
+
+/* ================= DATE ================= */
+
+.today {
+    width: fit-content;
+
+    margin: 5px auto 12px;
+
+    padding: 6px 12px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #667781;
+
+    font-size: 11px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================= MESSAGES ================= */
+
+.messages {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 0 18px 15px;
+}
+
+
+/* ================= TYPING ================= */
+
+.typing-row {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 7px;
+
+    margin: 5px 0;
+}
+
+.typing-avatar {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 15px;
+}
+
+.typing-bubble {
+    width: 60px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    border-radius: 4px 12px 12px 12px;
+
+    background: white;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.typing-bubble span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #8696a0;
+
+    animation: typing 1.2s infinite;
+}
+
+.typing-bubble span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.typing-bubble span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes typing {
+
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    30% {
+        transform: translateY(-4px);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .messages {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

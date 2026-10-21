@@ -1,0 +1,42 @@
+.alert{
+display:flex;
+align-items:center;
+padding:18px;
+border-radius:10px;
+margin:15px 0;
+border-left:6px solid;
+}
+
+.alert h4{
+margin:0;
+margin-bottom:6px;
+}
+
+.alert p{
+margin:0;
+font-size:14px;
+}
+
+.alert-success{
+background:#DCFCE7;
+border-color:#16A34A;
+color:#166534;
+}
+
+.alert-error{
+background:#FEE2E2;
+border-color:#DC2626;
+color:#991B1B;
+}
+
+.alert-warning{
+background:#FEF3C7;
+border-color:#F59E0B;
+color:#92400E;
+}
+
+.alert-info{
+background:#DBEAFE;
+border-color:#2563EB;
+color:#1D4ED8;
+}

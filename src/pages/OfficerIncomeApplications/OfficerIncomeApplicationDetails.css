@@ -1,0 +1,137 @@
+.income-officer-details {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f5f7fb;
+}
+
+.income-details-card {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.income-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.income-details-header h1 {
+    margin-bottom: 5px;
+}
+
+.income-details-header p {
+    color: #666;
+}
+
+.income-details-section {
+    margin-bottom: 30px;
+}
+
+.income-details-section h2 {
+    margin-bottom: 20px;
+}
+
+.income-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.income-details-grid > div {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.income-details-grid label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.income-details-grid p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.status-approved,
+.status-rejected,
+.status-pending {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.income-details-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.approve-income-btn,
+.reject-income-btn,
+.back-income-btn {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.approve-income-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.reject-income-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.back-income-btn {
+    background: #475569;
+    color: white;
+}
+
+.income-officer-loading {
+    text-align: center;
+    padding: 60px;
+}
+
+@media (max-width: 700px) {
+
+    .income-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .income-details-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}

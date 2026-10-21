@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+
+.application-details-page {
+    min-height: 100vh;
+    background: #f5f7f9;
+    color: #263238;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.details-header {
+    min-height: 80px;
+    padding: 15px 40px;
+
+    background: #1b5e20;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details-header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.details-header p {
+    margin: 4px 0 0;
+    opacity: 0.85;
+}
+
+.details-header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.details-header button {
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    background: white;
+    color: #1b5e20;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.details-header .details-logout {
+    background: #c62828;
+    color: white;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.details-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 35px 25px 60px;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.details-title {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.details-title h2 {
+    margin: 0;
+
+    color: #1b5e20;
+}
+
+.details-title p {
+    margin-bottom: 0;
+
+    color: #777;
+}
+
+.details-status {
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.details-status.approved {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.details-status.pending {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.details-status.rejected {
+    background: #ffebee;
+    color: #c62828;
+}
+
+
+/* =====================================================
+   DETAILS CARD
+===================================================== */
+
+.details-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.details-card h3 {
+    margin-top: 0;
+
+    color: #1b5e20;
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 12px;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.detail-item span {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.detail-item strong {
+    color: #263238;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.details-actions {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.details-actions h3 {
+    margin-top: 0;
+
+    color: #1b5e20;
+}
+
+.details-actions p {
+    color: #777;
+}
+
+.action-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+.approve-details-button {
+    background: #2e7d32;
+
+    color: white;
+}
+
+.approve-details-button:hover {
+    background: #1b5e20;
+}
+
+.reject-details-button {
+    background: #c62828;
+
+    color: white;
+}
+
+.reject-details-button:hover {
+    background: #b71c1c;
+}
+
+.action-buttons button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.details-loading {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 20px;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   NOT FOUND
+===================================================== */
+
+.details-not-found {
+    max-width: 600px;
+
+    margin: 80px auto;
+
+    background: white;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.details-not-found > div {
+    font-size: 45px;
+}
+
+.details-not-found h2 {
+    color: #333;
+}
+
+.details-not-found p {
+    color: #777;
+}
+
+.details-not-found button {
+    border: none;
+
+    background: #2e7d32;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .details-header {
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .details-header-buttons {
+        flex-wrap: wrap;
+    }
+
+    .details-container {
+        padding: 25px 15px 40px;
+    }
+
+    .details-title {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+}

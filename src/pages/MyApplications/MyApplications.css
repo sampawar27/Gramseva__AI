@@ -1,0 +1,292 @@
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.applications-container {
+    min-height: 100vh;
+    background: #f5f7fa;
+    padding: 40px;
+}
+
+
+/* ================================
+   PAGE TITLE
+================================ */
+
+.applications-container h1 {
+    color: #2E7D32;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   FILTER SECTION
+================================ */
+
+.filter-section {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* ================================
+   SEARCH BOX
+================================ */
+
+.search-box {
+    width: 300px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.search-box:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 4px rgba(46, 125, 50, 0.25);
+}
+
+
+/* ================================
+   FILTER DROPDOWN
+================================ */
+
+.filter-select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-select:focus {
+    border-color: #2E7D32;
+}
+
+
+/* ================================
+   RESET BUTTON
+================================ */
+
+.reset-btn {
+    background: #757575;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #424242;
+}
+
+
+/* ================================
+   RESULT COUNT
+================================ */
+
+.result-count {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 15px;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.applications-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   TABLE HEADER
+================================ */
+
+.applications-container th {
+    background: #2E7D32;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+
+/* ================================
+   TABLE DATA
+================================ */
+
+.applications-container td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ================================
+   TABLE HOVER
+================================ */
+
+.applications-container tbody tr:hover {
+    background: #F5F5F5;
+}
+
+
+/* ================================
+   STATUS BADGES
+================================ */
+
+.approved {
+    background: #E8F5E9;
+    color: #2E7D32;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.pending {
+    background: #FFF3E0;
+    color: #E65100;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.rejected {
+    background: #FFEBEE;
+    color: #C62828;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+/* ================================
+   VIEW DETAILS BUTTON
+================================ */
+
+.view-details-btn {
+    background: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.view-details-btn:hover {
+    background: #0D47A1;
+}
+
+
+/* ================================
+   DOWNLOAD BUTTON
+================================ */
+
+.download-btn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.download-btn:hover {
+    background: #1B5E20;
+}
+
+
+/* ================================
+   WAITING TEXT
+================================ */
+
+.waiting {
+    display: inline-block;
+    color: #E65100;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+/* ================================
+   REJECTED TEXT
+================================ */
+
+.rejected-text {
+    display: inline-block;
+    color: #C62828;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
+/* ================================
+   NO RESULTS
+================================ */
+
+.no-results {
+    text-align: center;
+    padding: 30px !important;
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .applications-container {
+        padding: 20px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+
+    .reset-btn {
+        width: 100%;
+    }
+
+    .applications-container {
+        overflow-x: auto;
+    }
+
+    .applications-container table {
+        min-width: 800px;
+    }
+
+}

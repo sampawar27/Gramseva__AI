@@ -1,0 +1,465 @@
+.officer-details-container {
+
+    min-height: 100vh;
+
+    background: #f5f7fa;
+
+    padding: 40px;
+
+}
+
+
+.officer-details-card {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* HEADER */
+
+.details-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.details-header h1 {
+
+    margin: 0;
+
+    color: #2e7d32;
+
+}
+
+
+.details-header p {
+
+    margin-top: 10px;
+
+    color: #555;
+
+}
+
+
+/* STATUS */
+
+.status {
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+.status.pending {
+
+    background: #fff3cd;
+
+    color: #856404;
+
+}
+
+
+.status.approved {
+
+    background: #d4edda;
+
+    color: #155724;
+
+}
+
+
+.status.rejected {
+
+    background: #f8d7da;
+
+    color: #721c24;
+
+}
+
+
+/* SECTIONS */
+
+.details-section {
+
+    margin-bottom: 30px;
+
+}
+
+
+.details-section h2 {
+
+    color: #2e7d32;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+
+    border-left: 5px solid #2e7d32;
+
+    padding-left: 12px;
+
+}
+
+
+/* GRID */
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.detail-item {
+
+    background: #f8f9fa;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid #e5e5e5;
+
+}
+
+
+.detail-item label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #666;
+
+    margin-bottom: 7px;
+
+}
+
+
+.detail-item p {
+
+    margin: 0;
+
+    color: #222;
+
+    font-size: 15px;
+
+}
+
+
+/* ACTION AREA */
+
+.details-actions {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 25px;
+
+    margin-top: 10px;
+
+}
+
+
+.back-btn {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #607d8b;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+.back-btn:hover {
+
+    background: #455a64;
+
+}
+
+
+.decision-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+.approve-details-btn {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+.approve-details-btn:hover {
+
+    background: #1b5e20;
+
+}
+
+
+.reject-details-btn {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #d32f2f;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+
+.reject-details-btn:hover {
+
+    background: #b71c1c;
+
+}
+
+
+.approve-details-btn:disabled,
+
+.reject-details-btn:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* FINAL MESSAGE */
+
+.final-message {
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+.approved-message {
+
+    background: #d4edda;
+
+    color: #155724;
+
+}
+
+
+.rejected-message {
+
+    background: #f8d7da;
+
+    color: #721c24;
+
+}
+
+
+/* LOADING */
+
+.details-loading {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f5f7fa;
+
+}
+
+
+.details-loading h2 {
+
+    color: #2e7d32;
+
+}
+
+
+/* ERROR */
+
+.details-error {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #f5f7fa;
+
+}
+
+
+.details-error h2 {
+
+    color: #d32f2f;
+
+}
+
+
+.details-error button {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .officer-details-container {
+
+        padding: 20px;
+
+    }
+
+
+    .officer-details-card {
+
+        padding: 20px;
+
+    }
+
+
+    .details-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .details-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .decision-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .back-btn,
+
+    .approve-details-btn,
+
+    .reject-details-btn {
+
+        width: 100%;
+
+    }
+
+}

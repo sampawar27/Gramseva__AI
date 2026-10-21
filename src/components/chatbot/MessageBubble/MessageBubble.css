@@ -1,0 +1,145 @@
+
+/* ================= MESSAGE ROW ================= */
+
+.message-row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    margin: 2px 0;
+}
+
+
+/* ================= RECEIVER ================= */
+
+.receiver-row {
+    justify-content: flex-start;
+
+    gap: 7px;
+}
+
+
+/* ================= SENDER ================= */
+
+.sender-row {
+    justify-content: flex-end;
+}
+
+
+/* ================= AVATAR ================= */
+
+.message-avatar {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 15px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= COMMON BUBBLE ================= */
+
+.message-bubble {
+    position: relative;
+
+    max-width: 70%;
+
+    padding: 8px 10px 5px;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    word-break: break-word;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= RECEIVER BUBBLE ================= */
+
+.receiver-bubble {
+    background: #ffffff;
+
+    color: #111b21;
+
+    border-radius:
+        4px 12px 12px 12px;
+}
+
+
+/* ================= SENDER BUBBLE ================= */
+
+.sender-bubble {
+    background: #d9fdd3;
+
+    color: #111b21;
+
+    border-radius:
+        12px 4px 12px 12px;
+}
+
+
+/* ================= TEXT ================= */
+
+.message-text {
+    padding-right: 5px;
+
+    white-space: pre-wrap;
+}
+
+
+/* ================= TIME ================= */
+
+.message-info {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 4px;
+
+    margin-top: 3px;
+
+    color: #667781;
+
+    font-size: 10px;
+}
+
+
+/* ================= DOUBLE CHECK ================= */
+
+.double-check {
+    color: #53bdeb;
+
+    font-size: 11px;
+
+    letter-spacing: -2px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .message-bubble {
+        max-width: 80%;
+
+        font-size: 13px;
+    }
+}

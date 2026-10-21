@@ -1,0 +1,375 @@
+.scheme-details-page {
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    background: #f5f7fb;
+
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.scheme-back-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+}
+
+.scheme-back-btn:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* ==========================================
+   MAIN CARD
+========================================== */
+
+.scheme-details-card {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.scheme-details-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+.scheme-details-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 18px;
+
+    font-size: 45px;
+
+}
+
+.scheme-category {
+
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+.scheme-details-title h1 {
+
+    margin: 0 0 10px 0;
+
+    color: #111827;
+
+    font-size: 32px;
+
+}
+
+.scheme-details-title p {
+
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.scheme-detail-section {
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+.scheme-detail-section h2 {
+
+    margin: 0 0 15px 0;
+
+    color: #111827;
+
+    font-size: 21px;
+
+}
+
+.scheme-detail-section p {
+
+    color: #4b5563;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+
+/* ==========================================
+   LIST
+========================================== */
+
+.scheme-list {
+
+    margin: 0;
+
+    padding-left: 25px;
+
+}
+
+.scheme-list li {
+
+    margin-bottom: 10px;
+
+    color: #4b5563;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.scheme-detail-actions {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+.scheme-back-action {
+
+    padding: 12px 20px;
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    border-radius: 8px;
+
+    color: #374151;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.scheme-back-action:hover {
+
+    background: #f3f4f6;
+
+}
+
+
+.scheme-official-btn {
+
+    padding: 12px 22px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.scheme-official-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* ==========================================
+   NOT FOUND
+========================================== */
+
+.scheme-not-found {
+
+    max-width: 600px;
+
+    margin: 100px auto;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 50px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+.not-found-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+.scheme-not-found h2 {
+
+    color: #111827;
+
+}
+
+.scheme-not-found p {
+
+    color: #6b7280;
+
+    margin-bottom: 25px;
+
+}
+
+.scheme-not-found button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .scheme-details-page {
+
+        padding: 20px;
+
+    }
+
+    .scheme-details-card {
+
+        padding: 22px;
+
+    }
+
+    .scheme-details-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .scheme-details-title h1 {
+
+        font-size: 25px;
+
+    }
+
+    .scheme-detail-actions {
+
+        flex-direction: column;
+
+    }
+
+    .scheme-back-action,
+    .scheme-official-btn {
+
+        width: 100%;
+
+    }
+
+}

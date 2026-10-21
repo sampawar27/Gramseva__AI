@@ -1,0 +1,38 @@
+.textarea-group{
+    margin-bottom:20px;
+}
+
+.textarea-label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#1E293B;
+}
+
+.textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #CBD5E1;
+    border-radius:10px;
+    resize:vertical;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+    font-family:inherit;
+}
+
+.textarea:focus{
+    border-color:#2E7D32;
+    box-shadow:0 0 0 3px rgba(46,125,50,.15);
+}
+
+.textarea-error{
+    color:#EF4444;
+    margin-top:6px;
+    font-size:13px;
+}
+
+.required{
+    color:red;
+    margin-left:4px;
+}

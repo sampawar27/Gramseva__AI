@@ -1,0 +1,39 @@
+.checkbox-container{
+display:flex;
+align-items:center;
+cursor:pointer;
+margin:12px 0;
+position:relative;
+font-size:16px;
+}
+
+.checkbox-container input{
+display:none;
+}
+
+.checkmark{
+width:20px;
+height:20px;
+border:2px solid #2E7D32;
+border-radius:5px;
+margin-right:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.3s;
+}
+
+.checkbox-container input:checked + .checkmark{
+background:#2E7D32;
+}
+
+.checkbox-container input:checked + .checkmark::after{
+content:"✓";
+color:white;
+font-size:14px;
+font-weight:bold;
+}
+
+.checkbox-label{
+color:#1E293B;
+}

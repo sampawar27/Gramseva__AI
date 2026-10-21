@@ -1,0 +1,471 @@
+.application-details-container {
+    min-height: 100vh;
+    background: #f5f7fa;
+    padding: 40px;
+}
+
+.details-card {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.details-header h1 {
+    margin: 0;
+    color: #2E7D32;
+}
+
+.status {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status.approved {
+    background: #C8E6C9;
+    color: #1B5E20;
+}
+
+.status.rejected {
+    background: #FFCDD2;
+    color: #B71C1C;
+}
+
+.status.pending {
+    background: #FFE0B2;
+    color: #E65100;
+}
+
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #2E7D32;
+    border-left: 5px solid #2E7D32;
+    padding-left: 12px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.detail-item {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.detail-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 7px;
+}
+
+.detail-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #222;
+    word-break: break-word;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.details-actions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-btn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #1B5E20;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .application-details-container {
+        padding: 20px;
+    }
+
+    .details-card {
+        padding: 20px;
+    }
+
+    .details-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+}
+.application-number {
+    margin-top: 8px;
+    color: #666;
+    font-weight: 600;
+}
+
+.status-message {
+    margin-top: 35px;
+}
+
+.approved-message,
+.pending-message,
+.rejected-message {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.approved-message {
+    background: #E8F5E9;
+    border: 1px solid #A5D6A7;
+}
+
+.pending-message {
+    background: #FFF3E0;
+    border: 1px solid #FFCC80;
+}
+
+.rejected-message {
+    background: #FFEBEE;
+    border: 1px solid #EF9A9A;
+}
+
+.approved-message h3 {
+    color: #2E7D32;
+    margin-top: 0;
+}
+
+.pending-message h3 {
+    color: #E65100;
+    margin-top: 0;
+}
+
+.rejected-message h3 {
+    color: #C62828;
+    margin-top: 0;
+}
+
+.approved-message p,
+.pending-message p,
+.rejected-message p {
+    color: #555;
+}
+
+.download-details-btn {
+    margin-top: 10px;
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.download-details-btn:hover {
+    background: #1B5E20;
+}
+
+.application-details-page {
+    min-height: 100vh;
+
+    background: #f5f7fa;
+
+    padding: 40px;
+}
+
+
+.details-card {
+    max-width: 950px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* HEADER */
+
+.details-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.details-header h1 {
+    margin: 0 0 8px;
+
+    color: #2E7D32;
+
+    font-size: 28px;
+}
+
+.details-header p {
+    margin: 0;
+
+    color: #777;
+}
+
+
+/* STATUS */
+
+.application-status {
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.status-approved {
+    background: #E8F5E9;
+
+    color: #2E7D32;
+}
+
+.status-rejected {
+    background: #FFEBEE;
+
+    color: #C62828;
+}
+
+.status-pending {
+    background: #FFF3E0;
+
+    color: #EF6C00;
+}
+
+
+/* SECTION */
+
+.details-section {
+    margin-top: 30px;
+}
+
+.details-section h2 {
+    color: #333;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+
+/* GRID */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.detail-item {
+    background: #f8f9fa;
+
+    padding: 18px;
+
+    border-radius: 10px;
+}
+
+.detail-item label {
+    display: block;
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.detail-item p {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* BIRTH CERTIFICATE */
+
+.certificate-info {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: #E8F5E9;
+
+    border-left: 5px solid #2E7D32;
+
+    border-radius: 8px;
+}
+
+.certificate-info h2 {
+    margin-top: 0;
+
+    color: #2E7D32;
+}
+
+.certificate-info p {
+    color: #555;
+
+    line-height: 1.6;
+}
+
+
+/* STATUS MESSAGES */
+
+.success-message,
+.rejected-message,
+.pending-message {
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 8px;
+}
+
+.success-message {
+    background: #E8F5E9;
+
+    color: #2E7D32;
+}
+
+.rejected-message {
+    background: #FFEBEE;
+
+    color: #C62828;
+}
+
+.pending-message {
+    background: #FFF3E0;
+
+    color: #EF6C00;
+}
+
+.success-message p,
+.rejected-message p,
+.pending-message p {
+    margin-bottom: 0;
+}
+
+
+/* ACTIONS */
+
+.details-actions {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+.back-btn {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2E7D32;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #1B5E20;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .application-details-page {
+        padding: 20px;
+    }
+
+    .details-card {
+        padding: 22px;
+    }
+
+    .details-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

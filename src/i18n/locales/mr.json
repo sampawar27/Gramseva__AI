@@ -1,0 +1,90 @@
+{
+    "common": {
+        "login": "लॉगिन",
+        "logout": "लॉगआउट",
+        "register": "नोंदणी करा",
+        "submit": "सबमिट करा",
+        "cancel": "रद्द करा",
+        "save": "जतन करा",
+        "edit": "संपादित करा",
+        "delete": "हटवा",
+        "loading": "लोड होत आहे...",
+        "back": "मागे",
+        "viewDetails": "तपशील पहा"
+    },
+
+    "navbar": {
+        "home": "मुख्यपृष्ठ",
+        "complaints": "तक्रारी",
+        "profile": "प्रोफाइल",
+        "dashboard": "डॅशबोर्ड",
+        "officerLogin": "अधिकारी लॉगिन",
+        "citizenLogin": "नागरिक लॉगिन"
+    },
+
+    "officerLogin": {
+        "title": "अधिकारी लॉगिन",
+        "subtitle": "ग्रामसेवा AI प्रशासन",
+        "officerId": "अधिकारी आयडी",
+        "password": "पासवर्ड",
+        "enterOfficerId": "अधिकारी आयडी प्रविष्ट करा",
+        "enterPassword": "पासवर्ड प्रविष्ट करा",
+        "loggingIn": "लॉगिन होत आहे...",
+        "login": "लॉगिन",
+        "noAccount": "विभाग प्रशासक खाते नाही का?",
+        "createAccount": "+ नवीन खाते तयार करा",
+        "officerIdRequired": "अधिकारी आयडी आवश्यक आहे.",
+        "passwordRequired": "पासवर्ड आवश्यक आहे.",
+        "invalidCredentials": "अवैध अधिकारी आयडी किंवा पासवर्ड.",
+        "loginFailed": "अधिकारी लॉगिन अयशस्वी झाले.",
+        "serverError": "सर्व्हरशी कनेक्ट करता आले नाही."
+    },
+
+    "departmentHead": {
+        "title": "विभाग प्रमुख तयार करा",
+        "subtitle": "ग्रामपंचायत विभाग व्यवस्थापित करण्यासाठी नवीन अधिकाऱ्याची नोंदणी करा.",
+        "officerInformation": "अधिकारी माहिती",
+        "formDescription": "विभाग प्रशासकाची माहिती प्रविष्ट करा.",
+        "officerId": "अधिकारी आयडी",
+        "password": "पासवर्ड",
+        "fullName": "पूर्ण नाव",
+        "email": "ईमेल पत्ता",
+        "mobile": "मोबाईल क्रमांक",
+        "department": "विभाग",
+        "selectDepartment": "विभाग निवडा",
+        "optional": "ऐच्छिक",
+        "create": "विभाग प्रमुख तयार करा",
+        "creating": "विभाग प्रमुख तयार होत आहे...",
+        "success": "विभाग प्रमुख यशस्वीरित्या तयार झाला!",
+        "redirecting": "अधिकारी लॉगिनकडे पाठवत आहे..."
+    },
+
+    "complaints": {
+        "title": "माझ्या तक्रारी",
+        "subtitle": "तुमच्या तक्रारी आणि त्यांची निराकरण स्थिती पाहा.",
+        "reportProblem": "+ समस्या नोंदवा",
+        "loading": "तक्रारी लोड होत आहेत...",
+        "noComplaints": "अद्याप कोणतीही तक्रार नाही",
+        "noComplaintsText": "तुम्ही अद्याप कोणतीही तक्रार नोंदवलेली नाही.",
+        "location": "स्थान",
+        "aiCategory": "AI श्रेणी",
+        "aiPriority": "AI प्राधान्य",
+        "department": "विभाग",
+        "pending": "प्रलंबित",
+        "aiVerification": "AI पडताळणी",
+        "verified": "पडताळलेले",
+        "submitted": "सादर केले"
+    },
+
+    "departments": {
+        "WATER_SUPPLY": "पाणी पुरवठा",
+        "ELECTRICITY": "वीज",
+        "HEALTH": "आरोग्य",
+        "SANITATION": "स्वच्छता",
+        "ROADS": "रस्ते",
+        "AGRICULTURE": "कृषी",
+        "EDUCATION": "शिक्षण",
+        "REVENUE": "महसूल",
+        "WOMEN_CHILD_WELFARE": "महिला व बालकल्याण"
+    }
+}

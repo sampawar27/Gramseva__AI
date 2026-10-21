@@ -1,0 +1,122 @@
+
+.chat-input {
+    min-height: 68px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    padding: 10px 14px;
+
+    background: #f0f2f5;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.chat-input textarea {
+    flex: 1;
+
+    min-height: 42px;
+    max-height: 110px;
+
+    resize: none;
+
+    border: none;
+
+    outline: none;
+
+    padding: 11px 15px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    color: #111b21;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    line-height: 20px;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.chat-input textarea::placeholder {
+    color: #8696a0;
+}
+
+
+/* ================= ATTACH ================= */
+
+.attach-button {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* ================= SEND ================= */
+
+.send-button {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #075e54;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.send-button:disabled {
+    opacity: 0.4;
+
+    cursor: not-allowed;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .chat-input {
+        padding: 8px;
+    }
+
+    .attach-button,
+    .send-button {
+        width: 38px;
+        height: 38px;
+    }
+}

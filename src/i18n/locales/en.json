@@ -1,0 +1,90 @@
+{
+    "common": {
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Register",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "loading": "Loading...",
+        "back": "Back",
+        "viewDetails": "View Details"
+    },
+
+    "navbar": {
+        "home": "Home",
+        "complaints": "Complaints",
+        "profile": "Profile",
+        "dashboard": "Dashboard",
+        "officerLogin": "Officer Login",
+        "citizenLogin": "Citizen Login"
+    },
+
+    "officerLogin": {
+        "title": "Officer Login",
+        "subtitle": "GramSeva AI Administration",
+        "officerId": "Officer ID",
+        "password": "Password",
+        "enterOfficerId": "Enter Officer ID",
+        "enterPassword": "Enter Password",
+        "loggingIn": "Logging in...",
+        "login": "Login",
+        "noAccount": "Don't have a department administrator account?",
+        "createAccount": "+ Create New Account",
+        "officerIdRequired": "Officer ID is required.",
+        "passwordRequired": "Password is required.",
+        "invalidCredentials": "Invalid Officer ID or password.",
+        "loginFailed": "Officer login failed.",
+        "serverError": "Unable to connect to server."
+    },
+
+    "departmentHead": {
+        "title": "Create Department Head",
+        "subtitle": "Register and assign a new officer to manage a Gram Panchayat department.",
+        "officerInformation": "Officer Information",
+        "formDescription": "Enter the details of the department administrator.",
+        "officerId": "Officer ID",
+        "password": "Password",
+        "fullName": "Full Name",
+        "email": "Email Address",
+        "mobile": "Mobile Number",
+        "department": "Department",
+        "selectDepartment": "Select Department",
+        "optional": "Optional",
+        "create": "Create Department Head",
+        "creating": "Creating Department Head...",
+        "success": "Department Head created successfully!",
+        "redirecting": "Redirecting to Officer Login..."
+    },
+
+    "complaints": {
+        "title": "My Complaints",
+        "subtitle": "Track your complaints and their resolution status.",
+        "reportProblem": "+ Report a Problem",
+        "loading": "Loading complaints...",
+        "noComplaints": "No Complaints Yet",
+        "noComplaintsText": "You have not submitted any complaints.",
+        "location": "Location",
+        "aiCategory": "AI Category",
+        "aiPriority": "AI Priority",
+        "department": "Department",
+        "pending": "Pending",
+        "aiVerification": "AI Verification",
+        "verified": "Verified",
+        "submitted": "Submitted"
+    },
+
+    "departments": {
+        "WATER_SUPPLY": "Water Supply",
+        "ELECTRICITY": "Electricity",
+        "HEALTH": "Health",
+        "SANITATION": "Sanitation",
+        "ROADS": "Roads",
+        "AGRICULTURE": "Agriculture",
+        "EDUCATION": "Education",
+        "REVENUE": "Revenue",
+        "WOMEN_CHILD_WELFARE": "Women & Child Welfare"
+    }
+}

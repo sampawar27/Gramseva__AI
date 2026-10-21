@@ -1,0 +1,123 @@
+.home{
+
+padding:80px;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+color:#2E7D32;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+color:#64748B;
+
+}
+/* =====================================================
+   CHATBOT OVERLAY
+===================================================== */
+
+.chatbot-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    padding: 20px;
+}
+
+.chatbot-overlay-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+    height: 90vh;
+    max-height: 750px;
+
+    background: #ffffff;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+
+    z-index: 10001;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+
+    font-size: 28px;
+    line-height: 30px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-close:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-overlay-content .chatbot-page {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+}
+
+.chatbot-overlay-content .chatbot {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .chatbot-overlay {
+        padding: 0;
+    }
+
+    .chatbot-overlay-content {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+
+        border-radius: 0;
+    }
+
+    .chatbot-close {
+        top: 8px;
+        right: 8px;
+    }
+}
