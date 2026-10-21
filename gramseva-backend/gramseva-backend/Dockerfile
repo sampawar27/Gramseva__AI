@@ -13,6 +13,9 @@ WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
 
+# Copy Aiven CA certificate for SSL verification
+COPY src/main/resources/aiven-ca.crt /app/aiven-ca.crt
+
 EXPOSE 8080
 
 CMD ["java", "-jar", "app.jar"]
