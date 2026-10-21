@@ -22,9 +22,8 @@ export default function OfficerLogin() {
 
         try {
 
-            const BASE_URL = import.meta.env.VITE_API_URL || "https://gramseva-ai-backend-sax7.onrender.com";
             const response = await fetch(
-                `${BASE_URL}/api/auth/officer/login`,
+                "http://localhost:8080/api/auth/officer/login",
                 {
                     method: "POST",
 

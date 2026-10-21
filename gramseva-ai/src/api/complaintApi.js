@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "https://gramseva-ai-backend-sax7.onrender.com";
-
 const API_URL =
-    `${BASE_URL}/api/complaints`;
+    "http://localhost:8080/api/complaints";
 
 
 // =========================================================

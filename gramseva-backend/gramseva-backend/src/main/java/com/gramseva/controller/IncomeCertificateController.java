@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/income-certificate")
-@CrossOrigin(originPatterns = "*")
+@CrossOrigin(origins = "http://localhost:5173")
 public class IncomeCertificateController {
 
     @Autowired

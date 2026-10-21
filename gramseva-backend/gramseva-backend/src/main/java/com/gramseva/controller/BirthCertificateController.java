@@ -17,7 +17,7 @@ import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping("/api/birth-certificate")
-@CrossOrigin(originPatterns = "*")
+@CrossOrigin(origins = "http://localhost:5173")
 public class BirthCertificateController {
 
     @Autowired

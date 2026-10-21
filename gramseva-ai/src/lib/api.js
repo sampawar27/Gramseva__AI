@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "https://gramseva-ai-backend-sax7.onrender.com";
+const API_URL = "https://gramseva-ai-backend-sax7.onrender.com";
 
 export async function apiRequest(endpoint, options = {}) {
     const token =

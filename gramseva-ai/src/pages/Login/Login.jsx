@@ -80,61 +80,54 @@ const handleLogin = async (e) => {
 
   try {
     const response = await api.post("/auth/login", {
-      villageId: formData.villageId.trim(),
+      villageId: formData.villageId,
       password: formData.password,
     });
 
     const data = response.data;
 
-    // Check if backend returned failure (HTTP 200 with success: false)
-    if (!data.success) {
-      setLoginError(data.message || "Invalid Village ID or password.");
-      return;
-    }
-
     // Remember Me
     if (formData.rememberMe) {
-      localStorage.setItem("rememberVillageId", formData.villageId.trim());
+      localStorage.setItem("rememberVillageId", formData.villageId);
     } else {
       localStorage.removeItem("rememberVillageId");
     }
-
-    if (data.token) {
-      localStorage.setItem("token", data.token);
-    }
-
+        if (data.token) {
+  localStorage.setItem("token", data.token);
+}
     // Save Logged-in User
-    localStorage.setItem(
-      "user",
-      JSON.stringify({
+localStorage.setItem(
+    "user",
+    JSON.stringify({
         id: data.id,
         villageId: data.villageId,
         fullName: data.fullName,
         role: data.role,
         status: data.status,
-        token: data.token,
-      })
-    );
+        token: data.token
+    })
+);
 
-    // Role Based Navigation
+localStorage.setItem("token", data.token);
+alert(data.message);
+
+    // Role Based Navigation (Dashboard will be created later)
     if (data.role === "CITIZEN") {
       navigate("/citizen/dashboard");
     } else if (data.role === "OFFICER") {
       navigate("/officer/dashboard");
     } else if (data.role === "ADMIN") {
       navigate("/admin/dashboard");
-    } else {
-      setLoginError("Account role not recognized.");
     }
 
   } catch (error) {
-    if (error.response?.data?.message) {
+
+    if (error.response) {
       setLoginError(error.response.data.message);
-    } else if (error.response?.data?.error) {
-      setLoginError(error.response.data.error);
     } else {
-      setLoginError("Unable to connect to server. Please try again.");
+      setLoginError("Unable to connect to server.");
     }
+
   } finally {
     setLoading(false);
   }

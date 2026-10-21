@@ -21,9 +21,10 @@ public class CorsConfig {
                 new CorsConfiguration();
 
 
-        configuration.setAllowedOriginPatterns(
+        configuration.setAllowedOrigins(
                 List.of(
-                        "*"
+                        "http://localhost:5173",
+                        "https://gramseva-ai1.onrender.com"
                 )
         );
 
@@ -41,7 +42,8 @@ public class CorsConfig {
 
         configuration.setAllowedHeaders(
                 List.of(
-                        "*"
+                        "Authorization",
+                        "Content-Type"
                 )
         );
 
