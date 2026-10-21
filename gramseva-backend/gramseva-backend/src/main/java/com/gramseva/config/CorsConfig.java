@@ -21,10 +21,12 @@ public class CorsConfig {
                 new CorsConfiguration();
 
 
-        configuration.setAllowedOrigins(
+        configuration.setAllowedOriginPatterns(
                 List.of(
                         "http://localhost:5173",
-                        "https://gramseva-ai1.onrender.com"
+                        "http://localhost:3000",
+                        "https://*.vercel.app",
+                        "https://*.onrender.com"
                 )
         );
 
